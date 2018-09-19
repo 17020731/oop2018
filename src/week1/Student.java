@@ -63,27 +63,3 @@ public class Student {
     }
 }
 
-    public String getId() {
-        return id;
-    }
-
-    public void setGroup(String _group) {
-        group = _group;
-    }
-
-    public String getGroup() {
-        return group;
-    }
-
-    public void setEmail(String em) {
-        email = em;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void getInfo() {
-        System.out.println("Student: " + name+ "\nID: " + id+ "\nGroup: " + group + "\nEmail: " + email + "\n");
-    }
-}
