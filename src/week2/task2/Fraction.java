@@ -2,29 +2,38 @@ package week2.task2;
 
 public class Fraction {
 
-    // TODO: khai báo các thuộc tính
+    private int numberator, denominator;
 
-    public Fraction(int numerator, int denominator) {
-        // TODO: khởi tạo giá trị cho các thuộc tính numberator (tử số), denominator (mẫu số)
+    public Fraction(int numerator, int denominator) {       //contructor cho phan so
+        this.numerator = numberator;
+        this.denominator = denominator;
     }
 
     public Fraction add(Fraction other) {
-        // TODO: Phương thức cộng hai phân số (this và other), trả về đối tượng Fraction mới
-        return null;
+        this.numerator = this.numerator*other.denominator+this.denominator*other.numerator;         
+        this.denominator = this.denominator*other.denominator;
+        return this;
     }
 
     public Fraction subtract(Fraction other) {
-        // TODO: Phương thức trừ hai phân số (this và other), trả về đối tượng Fraction mới
-        return null;
+        this.numerator = this.numerator*other.denominator-this.denominator*other.numerator;
+        this.denominator = this.denominator*other.denominator;
+        return this;
     }
 
     public Fraction multiply(Fraction other) {
-        // TODO: Phương thức nhân hai phân số (this và other), trả về đối tượng Fraction mới
-        return null;
+        this.numerator = this.numerator*other.numerator;
+        this.denominator = this.denominator*other.denominator;
+        return this;
     }
 
     public Fraction divide(Fraction other) {
-        // TODO: Phương thức chia hai phân số (this và other), trả về đối tượng Fraction mới
-        return null;
+        this.numerator = this.numerator*other.denominator;
+        this.denominator = this.denominator*other.numerator;
+        return this;
+    }
+
+    public boolean equals(Fraction other){
+        return (this.numerator*other.denominator == this.denominator*other.numberator);
     }
 }
