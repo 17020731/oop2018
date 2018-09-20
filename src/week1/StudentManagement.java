@@ -34,7 +34,7 @@ public class StudentManagement {
 
     static void removeStudent(String id) {                      // Phương thức xóa sinh viên với ID truyền vâo
         for (int i = 0; i < 7; i++) {
-            if (std[i].getId() == id) {
+            if (std[i].getId().equals(id)) {
                 for(int j = i+1; j < 7;j++) {
                     std[j - 1] = std[j];
                 }
