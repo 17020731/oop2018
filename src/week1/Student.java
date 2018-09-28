@@ -1,4 +1,4 @@
-﻿package week1;
+package week1;
 public class Student {
 
     private String name, id, email, group;

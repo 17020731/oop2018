@@ -1,4 +1,4 @@
-﻿package week2.task3;
+package week2.task3;
 
 public class Task3 {
 

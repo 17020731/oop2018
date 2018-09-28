@@ -1,7 +1,6 @@
 package week2.task2;
 
 public class Fraction {
-    Task1 test = new Task1();
     private int numerator, denominator;
     //getter and setter
     public int getDenominator() {
@@ -30,20 +29,12 @@ public class Fraction {
         this.denominator = denominator;
     }
 
-    //Toi gian
-    public Fraction Toigian(){
-        int Uoc = test.gcd(numerator,denominator);
-        this.numerator /= Uoc;
-        this.denominator/= Uoc;
-        return this;
-    }
 
     //
     public Fraction add(Fraction other) {
         Fraction sum = new Fraction();
         sum.numerator = this.numerator*other.denominator+this.denominator*other.numerator;
         sum.denominator = this.denominator*other.denominator;
-        sum.Toigian();
         return sum;
     }
 
@@ -51,7 +42,6 @@ public class Fraction {
         Fraction sub = new Fraction();
         sub.numerator = this.numerator*other.denominator-this.denominator*other.numerator;
         sub.denominator = this.denominator*other.denominator;
-        sub.Toigian();
         return sub;
     }
 
@@ -59,7 +49,6 @@ public class Fraction {
         Fraction multi = new Fraction();
         multi.numerator = this.numerator*other.numerator;
         multi.denominator = this.denominator*other.denominator;
-        multi.Toigian();
         return multi;
     }
 
@@ -67,7 +56,6 @@ public class Fraction {
         Fraction div = new Fraction();
         div.numerator = this.numerator*other.denominator;
         div.denominator = this.denominator*other.numerator;
-        div.Toigian();
         return div;
     }
 
