@@ -1,7 +1,52 @@
-package week4.task1;
+package Task1;
 
-/**
- * Created by CCNE on 08/10/2018.
- */
-public class QuaCam {
+public class QuaCam extends HoaQua {
+    private String name;
+    private int cost;
+
+
+    public QuaCam(String xuatxu, int cannang, String name, int cost) {
+        super(xuatxu, cannang);
+        this.name = name;
+        this.cost = cost;
+    }
+
+    public QuaCam(String xuatxu, int cannang) {
+        super(xuatxu, cannang);
+    }
+
+    @Override
+    public void Print() {
+        System.out.println("Ten:" + name + "\nGiatien: " + cost + "\n");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getCost() {
+        return cost;
+    }
+
+    public void setCost(int cost) {
+        this.cost = cost;
+    }
+
+    public boolean Cunggiong(String a){
+        return (name.equals(a));
+    }
+
+
+    public int Giabanle( int Soluong){
+        if(Soluong < 100)
+            return 5000;
+        else
+            return 10000;
+    }
+
+
 }
