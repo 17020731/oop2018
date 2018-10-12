@@ -1,8 +1,8 @@
 package Task1;
 
 public class QuaTao extends HoaQua {
-    private String hinhdang;
-    private int soluongDu;
+    protected String hinhdang;
+    protected int soluongDu;
 
     public QuaTao(String xuatxu, int cannang, String hinhdang, int soluongDu) {
         super(xuatxu, cannang);

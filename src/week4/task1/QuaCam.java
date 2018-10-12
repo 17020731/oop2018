@@ -1,8 +1,8 @@
 package Task1;
 
 public class QuaCam extends HoaQua {
-    private String name;
-    private int cost;
+    protected String name;
+    protected int cost;
 
 
     public QuaCam(String xuatxu, int cannang, String name, int cost) {

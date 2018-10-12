@@ -1,28 +1,28 @@
 package Task1;
 
 public class HoaQua {
-    private String Xuatxu;
-    private int Cannang;
+    protected String Doanhnghiep;
+    protected int Cannang;
 
-    public HoaQua(String xuatxu, int cannang) {
-        Xuatxu = xuatxu;
+    public HoaQua(String Doanhnghiep, int cannang) {
+        Doanhnghiep = Doanhnghiep;
         Cannang = cannang;
     }
 
 
-    public String getXuatxu() {
-        return Xuatxu;
+    public String getDoanhnghiep() {
+        return Doanhnghiep;
     }
 
-    public void setXuatxu(String xuatxu) {
-        Xuatxu = xuatxu;
+    public void setDoanhnghiep(String Doanhnghiep) {
+        Doanhnghiep = Doanhnghiep;
     }
 
     public int getCannang() {
         return Cannang;
     }
 
-    public void setCannang(String cannang) {
+    public void setCannang(int cannang) {
         Cannang = cannang;
     }
 
@@ -30,11 +30,11 @@ public class HoaQua {
         return (Cannang == a.Cannang);
     }
 
-    public boolean CheckXuatxu(){
-        return (Xuatxu,equals("VietNam"));
+    public boolean CheckDoanhnghiep(){
+        return (Doanhnghiep.equals("VietNam"));
     }
 
     public void Print(){
-        System.out.println("Xuat xu: " + Xuatxu +"\nCan nang: " + Cannang + "\n");
+        System.out.println("Xuat xu: " + Doanhnghiep +"\nCan nang: " + Cannang + "\n");
     }
 }

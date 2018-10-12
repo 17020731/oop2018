@@ -2,12 +2,11 @@ package Task2;
 
 public class Square extends Rectrangle {
 
-    public Square(double side, String color, boolean filled) {
-        super(side, color, filled);
+    public Square(String color, boolean filled, double side) {
+        super(color,filled,side);
     }
-
     public Square(double side){
-        super(side, side);
+        super(side,side);
     }
     public Square() {
     }
@@ -25,12 +24,12 @@ public class Square extends Rectrangle {
     }
 
     public void setLength(double side){
-        super.setWidth(side);
+        super.setLength(side);
     }
 
     @Override
     public String toString() {
-        return super.toString();
+        return super.toString() + "Hinh vuong";
     }
 
 }

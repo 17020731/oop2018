@@ -1,8 +1,8 @@
 package Task2;
 
 public class Shape {
-    private String Color = "red";
-    private boolean filled = true;
+    protected String Color = "red";
+    protected boolean filled = true;
 
     public Shape(String color, boolean filled) {
         Color = color;
@@ -29,6 +29,6 @@ public class Shape {
     }
 
     public String toString(){
-
+        return "Color: " + this.Color + "Filled: " + (filled == true ? "yes" : "no");
     }
 }

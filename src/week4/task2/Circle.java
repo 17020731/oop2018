@@ -1,8 +1,8 @@
 package Task2;
 
 public class Circle extends Shape {
-    double radius = 1.0;
-    final double PI = 3.14;
+    private double radius = 1.0;
+    static final double PI = 3.14;
     public Circle(String color, boolean filled, double radius) {
         super(color, filled);
         this.radius = radius;
@@ -22,15 +22,19 @@ public class Circle extends Shape {
     public void setRadius(double radius) {
         this.radius = radius;
     }
+
+    //Tinh dien tich
     public double getArea(){
         return radius*radius*PI;
     }
-
+    //Tinh chu vi
     public double getPerimeter(){
         return 2*this.radius*PI;
     }
+    //Viet lai phuong thuc toString tu Shape
+
     @Override
     public String toString() {
-        return super.toString();
+        return super.toString() + "Radius: " + radius + "Area: " + getArea() + "Perimeter: " + getPerimeter();
     }
 }

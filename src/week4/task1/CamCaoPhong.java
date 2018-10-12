@@ -15,9 +15,8 @@ public class CamCaoPhong extends QuaCam {
         super(xuatxu, cannang, name, cost);
     }
 
-    @Override
-    public void Print() {
-        System.out.println("Mau sac: " + mau +"\nSo luong: " + soluong + "\n");
+    public CamCaoPhong(String xuatxu, int cannang) {
+        super(xuatxu, cannang);
     }
 
     public String getMau() {
@@ -37,7 +36,7 @@ public class CamCaoPhong extends QuaCam {
     }
 
     public boolean color(String s){
-        return (mau.equals(s);
+        return (mau.equals(s));
     }
     public void out(){
         if(soluong > 1000)
@@ -46,5 +45,8 @@ public class CamCaoPhong extends QuaCam {
             System.out.println("Ngon");
     }
 
-
+    @Override
+    public void Print() {
+        System.out.println("Mau sac: " + mau +"\nSo luong: " + soluong + "\n");
+    }
 }
