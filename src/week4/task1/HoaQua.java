@@ -1,4 +1,4 @@
-package Task1;
+package week4.task1;
 
 public class HoaQua {
     protected String Doanhnghiep;
@@ -38,3 +38,4 @@ public class HoaQua {
         System.out.println("Xuat xu: " + Doanhnghiep +"\nCan nang: " + Cannang + "\n");
     }
 }
+

@@ -1,4 +1,4 @@
-package Task2;
+package week4.task2;
 
 public class Shape {
     protected String Color = "red";
@@ -32,3 +32,4 @@ public class Shape {
         return "Color: " + this.Color + "Filled: " + (filled == true ? "yes" : "no");
     }
 }
+

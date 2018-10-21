@@ -1,7 +1,6 @@
-package Task2;
+package week4.task2;
 
-public class Square extends Rectrangle {
-
+public class Square extends Rectrangle{
     public Square(String color, boolean filled, double side) {
         super(color,filled,side);
     }
@@ -31,6 +30,4 @@ public class Square extends Rectrangle {
     public String toString() {
         return super.toString() + "Hinh vuong";
     }
-
 }
-

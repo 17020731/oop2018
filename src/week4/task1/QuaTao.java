@@ -1,6 +1,6 @@
-package Task1;
+package week4.task1;
 
-public class QuaTao extends HoaQua {
+public class QuaTao extends HoaQua{
     protected String hinhdang;
     protected int soluongDu;
 
@@ -46,5 +46,4 @@ public class QuaTao extends HoaQua {
         else
             System.out.println("Binh thuong");
     }
-
 }

@@ -1,6 +1,6 @@
-package Task1;
+package week4.task1;
 
-public class CamCaoPhong extends QuaCam {
+public class CamCaoPhong extends QuaCam{
     private String mau;
     private int soluong;
 

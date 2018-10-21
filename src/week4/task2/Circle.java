@@ -1,6 +1,6 @@
-package Task2;
+package week4.task2;
 
-public class Circle extends Shape {
+public class Circle extends Shape{
     private double radius = 1.0;
     static final double PI = 3.14;
     public Circle(String color, boolean filled, double radius) {
