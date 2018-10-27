@@ -1,6 +1,6 @@
-package Task2;
+package week4.task2;
 
-public class Rectrangle extends Shape {
+public class Rectrangle extends Shape{
     protected double width = 1.0, length = 1.0;
 
     //Contructor

@@ -1,6 +1,6 @@
-package Task1;
+package week4.task1;
 
-public class QuaCam extends HoaQua {
+public class QuaCam extends HoaQua{
     protected String name;
     protected int cost;
 
@@ -47,6 +47,4 @@ public class QuaCam extends HoaQua {
         else
             return 10000;
     }
-
-
 }

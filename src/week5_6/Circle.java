@@ -1,8 +1,9 @@
-package Task2;
+package week5_6;
 
-public class Circle extends Shape {
+public  class Circle extends Shape {
     private double radius = 1.0;
     static final double PI = 3.14;
+    private Point point;
     public Circle(String color, boolean filled, double radius) {
         super(color, filled);
         this.radius = radius;
@@ -13,6 +14,26 @@ public class Circle extends Shape {
     }
 
     public Circle() {
+    }
+
+    public Circle(String color, boolean filled, double radius, Point p) {
+        super(color, filled);
+        this.radius = radius;
+        this.point = p;
+    }
+
+    public Circle(double radius, Point p) {
+        this.radius = radius;
+        this.point = p;
+    }
+
+
+    public Point getP() {
+        return point;
+    }
+
+    public void setP(Point p) {
+        this.point = p;
     }
 
     public double getRadius() {
@@ -35,6 +56,7 @@ public class Circle extends Shape {
 
     @Override
     public String toString() {
-        return super.toString() + "Radius: " + radius + "Area: " + getArea() + "Perimeter: " + getPerimeter();
+        return  "       Hinh tron";
     }
+
 }
