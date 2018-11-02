@@ -1,4 +1,11 @@
 package week7.task1;
 
-public class Expression {
+public abstract class Expression {
+    public String toString() {
+        return null;
+    }
+
+    public int evaluate(){
+        return 0;
+    }
 }
