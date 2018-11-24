@@ -45,9 +45,9 @@ public class Utils {
         System.out.println(test1);
 
         //Ghi đè (overload)
-        //writeContentToFile1("C:\\GitHub\\oop2018\\src\\week9\\ghi.txt");
+        writeContentToFile1("C:\\GitHub\\oop2018\\src\\week9\\ghi.txt");
         //Ghi nối thêm vào (append)
-        //writeContentToFile2("C:\\GitHub\\oop2018\\src\\week9\\ghi.txt");
+        writeContentToFile2("C:\\GitHub\\oop2018\\src\\week9\\ghi.txt");
 
         //Tìm file theo đường dẫn
         if(findFileByName("C:\\GitHub\\oop2018\\src\\week9", "ahihi.txt").exists())
